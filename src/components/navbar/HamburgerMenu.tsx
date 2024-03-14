@@ -3,9 +3,10 @@ import "./HamburgerMenu.css";
 
 type HamburgerMenuProps = {
   direction: string;
+  position: string;
 };
 
-const HamburgerMenu = ({ direction }: HamburgerMenuProps) => {
+const HamburgerMenu = ({ direction, position }: HamburgerMenuProps) => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   function toggleMenu() {
@@ -15,7 +16,11 @@ const HamburgerMenu = ({ direction }: HamburgerMenuProps) => {
   return (
     <>
       <div
-        className={"hamburger-menu " + (toggle ? direction : "")}
+        className={
+          "hamburger-menu" +
+          (toggle ? " " + direction + " " : "") +
+          (position ? " " + position + " " : " top-left ")
+        }
         onClick={toggleMenu}
       >
         <div className="line"></div>
