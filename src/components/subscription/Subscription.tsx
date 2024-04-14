@@ -1,10 +1,15 @@
-import NikeShoe from "./assets/shoe-nike.jpg";
+// import NikeShoe from "./assets/shoe-nike.jpg";
+// decided to get imageurl from cloud
 import "./Subscription.css";
 
 const Subscription = () => {
   return (
     <div className="subscription">
-      <img id="nike-shoe" src={NikeShoe} alt="Nike Shoe" />
+      <img
+        id="nike-shoe"
+        src="https://i.ibb.co/0QD3Ncm/shoe-nike.jpg"
+        alt="Nike Shoe"
+      />
       <div className="subscription__container">
         <h1>
           Subscribe and
