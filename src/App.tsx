@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./components/navbar/index";
+import Nav from "./components/header/index";
 import Subscription from "./components/subscription/Subscription";
 
 function App() {
